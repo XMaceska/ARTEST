@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'Magnemite',
             location: {
-                lat: 50.0756578,
-                lng: 14.4977000,
+                lat: 50.0753153,
+                lng: 14.4977242,
             }
         },
     ];
