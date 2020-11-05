@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'backpack',
             location: {
-                lat: 50.0753153,
-                lng: 14.4977242,
+                lat: 50.0756431,
+                lng: 14.4977031,
             }
         },
     ];
