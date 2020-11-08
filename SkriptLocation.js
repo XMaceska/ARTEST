@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'church',
             location: {
-                lat: 50.0756431,
-                lng: 14.4977031,
+                lat: 50.0752706,
+                lng: 14.4976731,
             }
         },
     ];
@@ -27,7 +27,7 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model', './church/church.gltf');
         model.setAttribute('rotation', '0 180 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '1 1 1');
+        model.setAttribute('scale', '100 100 100');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
