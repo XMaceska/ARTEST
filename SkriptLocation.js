@@ -24,8 +24,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('obj-model', 'obj', './church/church-obj.obj');
-        model.setAttribute('obj-model', 'mtl', './church/church-obj.mtl');
+        model.setAttribute('gltf-model','./primitives/primitives.gltf');
         model.setAttribute('rotation', '0 180 0');
         model.setAttribute('animation-mixer', '');
         model.setAttribute('scale', '120 120 120');
