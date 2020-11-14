@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'church',
             location: {
-                lat: 55.0756456,
-                lng: 14.4980969,
+                lat: 50.0754511,
+                lng: 14.4974775,
             }
         },
     ];
@@ -23,7 +23,7 @@ function renderPlaces(places) {
         let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        model.setAttribute('gps-projected-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model','./church/church.gltf');
         model.setAttribute('rotation', '0 0 0');
         model.setAttribute('animation-mixer', '');
