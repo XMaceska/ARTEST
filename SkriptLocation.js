@@ -27,7 +27,7 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model','./church/church.gltf');
         model.setAttribute('rotation', '0 0 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '50 50 50');
+        model.setAttribute('scale', '1 1 1');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
