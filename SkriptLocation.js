@@ -14,7 +14,7 @@ function staticLoadPlaces() {
         },
     ];
 }
-
+navigator.geolocation.getCurrentPosition
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
