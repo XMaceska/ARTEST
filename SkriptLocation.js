@@ -14,7 +14,6 @@ function staticLoadPlaces() {
         },
     ];
 }
-navigator.geolocation.getCurrentPosition
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
@@ -26,7 +25,7 @@ function renderPlaces(places) {
         model.setAttribute('gps-projected-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model','./church/church.gltf');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '1 1 1');
+        model.setAttribute('scale', '100 100 100');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
