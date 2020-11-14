@@ -1,7 +1,7 @@
 
 window.onload = () => {
     const button = document.querySelector('button[data-action="change"]');
-    button.innerText = '﹖';
+    button.innerText = 'ZZ';
 
     let places = staticLoadPlaces();
     renderPlaces(places);
@@ -14,14 +14,14 @@ function staticLoadPlaces() {
             location: {
                 lat: 50.0756456,
                 lng: 14.4980969,
-            },
+            }
         },
     ];
 }
 
 var models = [
     {
-        url: '.magnemite/scene.gltf',
+        url: './magnemite/scene.gltf',
         scale: '0.5 0.5 0.5',
         info: 'Magnemite, Lv. 5, HP 10/10',
         rotation: '0 180 0',
@@ -30,7 +30,7 @@ var models = [
         url: './church/church.gltf',
         scale: '50 50 50',
         rotation: '0 180 0',
-        info: 'Sv. Mouřenec',
+        info: 'Sv. Mourenec',
     },
 ];
 
