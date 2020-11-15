@@ -25,7 +25,7 @@ function renderPlaces(places) {
         model.setAttribute('gps-projected-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model','./church/church.gltf');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '100 100 100');
+        model.setAttribute('scale', '50 50 50');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
