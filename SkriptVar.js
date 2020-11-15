@@ -12,8 +12,8 @@ function staticLoadPlaces() {
         {
             name: 'Mourenec',
             location: {
-                lat: 50.0756456,
-                lng: 14.4980969,
+                lat: 50.0754511,
+                lng: 14.4974775,
             },
         },
     ];
