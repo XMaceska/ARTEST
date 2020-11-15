@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'church',
             location: {
-                lat: 50.0754511,
-                lng: 14.4974775,
+                lat: 50.0755131,
+                lng: 14.4964339,
             }
         },
     ];
@@ -25,10 +25,10 @@ function renderPlaces(places) {
         model.setAttribute('gps-projected-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model','./church/church.gltf');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '50 50 50');
+        model.setAttribute('scale', '1 1 1');
 
         model.addEventListener('loaded', () => {
-            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
+            window.dispatchEvent(new CustomEvent('gps-projected-entity-place-loaded'))
         });
 
         scene.appendChild(model);
