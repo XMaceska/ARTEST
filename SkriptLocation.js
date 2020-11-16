@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'church',
             location: {
-                lat: 50.0753686,
-                lng: 14.4978436,
+                lat: 50.07560481883863,
+                lng: 14.49819048912721,
             }
         },
     ];
